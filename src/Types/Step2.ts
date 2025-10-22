@@ -1,0 +1,15 @@
+export type Step2 = {
+     drivers: string,
+    truck_year: string,
+    truck_make: string,
+    unit_number: string,
+    vin: string,
+    license_plate: string,
+    license_state: string,
+    apportioned_or: "yes" | "no",
+    registered_weight_or: string,
+    axles: string,
+    purchase_type: "company" | "leased",
+    lessor_company: string,
+    commodity: string,
+}

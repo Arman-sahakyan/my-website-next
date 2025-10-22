@@ -1,0 +1,24 @@
+.header{
+    background-color: white;
+    
+}
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+.contact{
+    color: rgb(45, 45, 45);
+    cursor: pointer;
+    transition: .45s ease;
+}
+.contact:hover{
+    color: #00b4d8 !important;
+    transition: .45s ease;
+}
+.logo img{
+    width: 100px;
+}

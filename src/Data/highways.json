@@ -1,0 +1,193 @@
+[
+    {
+      "name": "101 North, California",
+      "lat": 41.998411, 
+      "lng": -124.208252,
+      "highway": "US-101",
+      "state": "OR",
+      "type": "entrance",
+      "border": "California"
+    },
+    {
+      "name": "199 North, California",
+      "lat": 41.996869, 
+      "lng": -123.721411,
+      "highway": "US-199",
+      "state": "OR",
+      "type": "entrance",
+      "border": "California"
+    },
+    {
+      "name": "139 North, California",
+      "lat": 41.998264, 
+      "lng": -121.519586,
+      "highway": "US-139",
+      "state": "OR",
+      "type": "entrance",
+      "border": "California"
+    },
+    {
+      "name": "I-5 North, California",
+      "lat": 42.005463, 
+      "lng": -122.615402,
+      "highway": "I-5",
+      "state": "OR",
+      "type": "entrance",
+      "border": "California"
+    },
+    {
+      "name": "97 North, California",
+      "lat": 42.003237, 
+      "lng": -121.889137,
+      "highway": "US-97",
+      "state": "OR",
+      "type": "entrance",
+      "border": "California"
+    },
+    {
+      "name": "395 North, California",
+      "lat": 41.992999, 
+      "lng": -120.298062,
+      "highway": "US-395",
+      "state": "OR",
+      "type": "entrance",
+      "border": "California"
+    },
+    {
+      "name": "95 North, Nevada",
+      "lat": 41.998193, 
+      "lng": -117.718534,
+      "highway": "US-97",
+      "state": "OR",
+      "type": "entrance",
+      "border": "Nevada"
+    },
+    
+    {
+      "name": "140 North Nevada",
+      "lat": 41.993932, 
+      "lng": -119.321050,
+      "highway": "US-140",
+      "state": "OR",
+      "type": "entrance",
+      "border": "Nevada"
+    },
+    {
+      "name": "I-84 East Idaho",
+      "lat": 44.006827, 
+      "lng": -116.941294,
+      "highway": "I-84",
+      "state": "OR",
+      "type": "entrance",
+      "border": "Idaho"
+    },
+    {
+      "name": "95 South Idaho",
+      "lat": 43.250779, 
+      "lng": -117.026669,
+      "highway": "US-95",
+      "state": "OR",
+      "type": "entrance",
+      "border": "Idaho"
+    },
+    {
+      "name": "26 East Idaho ",
+      "lat": 43.876896, 
+      "lng": -116.983885,
+      "highway": "US-26",
+      "state": "OR",
+      "type": "entrance",
+      "border": "Idaho"
+    },
+    
+    {
+      "name": "101 North, Washington",
+      "lat": 46.234951,  
+      "lng": -123.871892,
+      "highway": "US-101",
+      "state": "OR",
+      "type": "entrance",
+      "border": "Washington"
+    },
+    {
+      "name": "433 South/West, Washington",
+      "lat": 46.104540,  
+      "lng": -122.961977, 
+      "highway": "US-101",
+      "state": "OR",
+      "type": "entrance",
+      "border": "Washington"
+    },
+    {
+      "name": "US-30 West - Washington Border",
+      "lat": 46.0903,
+      "lng": -123.8850,
+      "highway": "US-30",
+      "state": "OR",
+      "type": "entrance",
+      "border": "Washington"
+    },
+    {
+      "name": "11 South, Washington",
+      "lat": 46.000746, 
+      "lng": -118.387252,
+      "highway": "US-11",
+      "state": "OR",
+      "type": "entrance",
+      "border": "Washington"
+    },
+    {
+      "name": "730 South, Washington",
+      "lat": 45.840405, 
+      "lng": -119.610939,
+      "highway": "US-730",
+      "state": "OR",
+      "type": "entrance",
+      "border": "Washington"
+    },
+    {
+      "name": "82 South, Washington",
+      "lat": 45.800168, 
+      "lng": -119.388613,
+      "highway": "US-82",
+      "state": "OR",
+      "type": "entrance",
+      "border": "Washington"
+    },
+    {
+      "name": "205 South, Washington",
+      "lat": 45.597256,  
+      "lng": -122.550128,
+      "highway": "US-205",
+      "state": "OR",
+      "type": "entrance",
+      "border": "Washington"
+    },
+    {
+      "name": "97 North, Washington",
+      "lat": 45.675966, 
+      "lng":  -120.836142,
+      "highway": "US-97",
+      "state": "OR",
+      "type": "entrance",
+      "border": "Washington"
+    },
+    {
+      "name": "I-84 West - Washington Border (Portland)",
+      "lat": 45.5892,
+      "lng": -122.5975,
+      "highway": "I-84",
+      "state": "OR",
+      "type": "entrance",
+      "border": "Washington"
+    },
+    {
+      "name": "I-5 North - Washington Border",
+      "lat": 45.618060,
+      "lng": -122.675078,
+      "highway": "I-5",
+      "state": "OR",
+      "type": "entrance",
+      "border": "Washington"
+    }
+  ]

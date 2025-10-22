@@ -1,0 +1,21 @@
+.loadingScreen{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fullscreen{
+    height: 100vh;
+}
+.loadingScreen_circle{
+    fill: blue;
+    animation: loading 1s linear infinite;
+}
+@keyframes loading {
+   0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

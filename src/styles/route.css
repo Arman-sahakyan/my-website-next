@@ -1,0 +1,218 @@
+.form-page {
+  font-family: 'Inter', sans-serif;
+  background: white;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.radio_input{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  
+}
+.radio_input{
+  width: auto;
+}
+.radio_input span{
+  width: 150px;
+}
+/* .form-container {
+  background: white;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.05);
+} */
+
+.form-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 5px;
+}
+
+.form-subtitle {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-label, .section-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus, select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.2);
+}
+
+.radio-group input{
+  width: 20px;
+}
+
+.add-stop {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.stop-row {
+  display: flex;
+  align-items: self-start;
+  gap: 8px;
+  margin-bottom: 8px;
+
+}
+
+.remove-stop {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #00b4d8, #0077b6);
+  color: white;
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+.btn-primary a{
+  color: white;
+  text-decoration: none;
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 119, 182, 0.4);
+}
+
+.miles-display {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #111827;
+}
+.price-card {
+  margin-top: 1rem;
+  background: #fff;
+  border: 1px solid #e7e9ee;
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,.05);
+  margin-bottom: 20px;
+}
+
+.price-title {
+  margin: 0 0 .5rem 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.price-rows {
+  display: grid;
+  gap: .4rem;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #334155;
+  font-size: .95rem;
+}
+
+.price-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: .4rem 0;
+}
+
+.price-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: .35rem;
+  font-size: 1.05rem;
+  color: #111827;
+}
+
+.price-note {
+  margin-top: .5rem;
+  font-size: .85rem;
+  color: #64748b;
+}
+.calculate-btn{
+  width: max-content;
+}
+.form-actions{
+  display: flex;
+  justify-content: flex-end;
+}
+.trip-type__option{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.trip-type__option input{
+  width: max-content;
+}
+.stop_top_row{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.radio_input{
+  display: flex;
+  justify-content: start;
+  gap: 0;
+  margin-bottom: 20px;
+}
+.radio_input input{
+  width: 30px;
+}
+.buttons_container{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.calculate-btn{
+  width: max-content;
+}
+.stop_bottom_row{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.radio-row{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
