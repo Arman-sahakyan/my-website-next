@@ -179,7 +179,6 @@ export function TruckForm({ draftId}: TruckFormProps) {
   return (
     <main className="trip-planner">
       <div className="container">
-        <h1 className="trip-planner__title">Truck Information</h1>
 
         <form onSubmit={handleSubmit} className="form-grid">
           <input type="hidden" name="draftId" value={draftId ?? ""} />
@@ -297,7 +296,7 @@ export function TruckForm({ draftId}: TruckFormProps) {
           <fieldset className="trip-type">
             <legend className="form-label">Apportioned with Oregon?</legend>
             <div className="radio-row">
-              <label className="trip-type__option">
+              <label className="trip-type__option input_radio">
                 <input
                   type="radio"
                   name="apportioned_or"

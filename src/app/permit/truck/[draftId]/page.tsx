@@ -9,7 +9,7 @@ export default function Step2Page({ params }: any) {
 
   return (
     <main className="container">
-      <h1>Step 2 — Truck Information</h1>
+      <h1>Truck Information</h1>
       <TruckForm draftId={draftId} />
     </main>
   );

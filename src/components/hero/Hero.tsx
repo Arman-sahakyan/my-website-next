@@ -50,6 +50,7 @@ export default function Hero() {
 
     try {
       const result = await addDoc(payload);
+      setLoading(false)
 
       if (result?.id) {
         // ✅ redirect to dynamic route (no query string)
@@ -139,7 +140,7 @@ export default function Hero() {
                 {errors.phone && <p className="field-error">{errors.phone}</p>}
 
                 <div className="button-container">
-                  <button className="next-button hero-btn" type="submit">NEXT</button>
+                  <button className="next-button hero-btn" type="submit">{loading?'Next...':'Next'}</button>
                 </div>
               </form>
             </div>

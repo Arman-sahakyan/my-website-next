@@ -198,12 +198,12 @@ export function RouteForm({ draftId}: RouteFormProps) {
 
   async function getData() {
     if (!draftId) return;
-    setLoading(true)
     const res = await getPermit(draftId);
-    setForm(res.step3)
+    if(res.step3) setForm(res.step3)
+    
     setPermit(res);
-    setStops(res.step3.stops)
-    setLoading(false)
+    if (res.step3.stops) setStops(res.step3.stops)
+    
   }
 
   // if (loading) return <Loading isFullScreen={true} />
@@ -231,7 +231,7 @@ export function RouteForm({ draftId}: RouteFormProps) {
           <label>Route Type</label>
           <select
             name="routeType"
-            value={form.routeType}
+            value={form.routeType || 'enter'}
             onChange={handleChange}
           >
             <option value="enter">Enter Oregon</option>
