@@ -19,7 +19,7 @@ interface RouteFormProps {
   isAdmin?: boolean;
   onStateChange?: (form: any) => void;
 }
-
+declare const google: any;
 import highways from "@/Data/highways.json";
 import { getPermit, paymentRequest } from "@/actions/action";
 import Loading from "../Loading/Loading";

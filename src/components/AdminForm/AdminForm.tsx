@@ -89,7 +89,9 @@ function buildWeightRanges(): string[] {
   ranges.push(`${start}-105500`);
   return ranges;
 }
+declare const google: any;
 const AdminForm = ({ draftId }:{draftId?: string}) => {
+  
   const [form, setForm] = useState({
     readyToPay: false,
     step1: {
