@@ -2,7 +2,11 @@
 import { useEffect, useState } from "react";
 import { calculateRoute } from "@/actions/calculating";
 import "../../styles/route.css";
-
+declare global {
+  interface Window {
+    google: any;
+  }
+}
 interface Stop {
   address?: string;
   lat?: string;

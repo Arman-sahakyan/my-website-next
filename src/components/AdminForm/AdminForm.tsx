@@ -11,6 +11,12 @@ import "@/styles/route.css";
 import { calculateRoute } from "@/actions/calculating";
 import { useRouter } from "next/navigation";
 
+declare global {
+  interface Window {
+    google: any;
+  }
+}
+
 interface Stop {
   address: string;
   lat: number;
