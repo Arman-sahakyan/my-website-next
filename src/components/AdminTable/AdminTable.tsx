@@ -16,7 +16,7 @@ const AdminTable = () => {
 
   async function getData() {
     setLoading(true);
-    const res = await getPermits();
+    const res:any = await getPermits();
     setData(res);
     setLoading(false);
   }
@@ -28,7 +28,9 @@ const AdminTable = () => {
 
     return (
       <tbody>
-        {data?.map((item:any, key:number) => (
+        
+        {// @ts-ignore
+        data?.map((item:any, key:number) => (
           <tr onClick={()=>router.push(`/admin/${item.id}`)} className="adminTable_row" key={key}>
             <td className="adminTable_row_item">{item.step1.usdot_mc_ccd}</td>
             <td className="adminTable_row_item">{item.step1.email}</td>

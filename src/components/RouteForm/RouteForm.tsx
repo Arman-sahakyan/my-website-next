@@ -69,6 +69,7 @@ export function RouteForm({ draftId}: RouteFormProps) {
 
   const handleStopChange = (idx: number, value: string,name:string) => {
     const newStops = [...stops];
+    // @ts-ignore
     newStops[idx][name] = value;
     setStops(newStops);
   };
@@ -176,6 +177,7 @@ export function RouteForm({ draftId}: RouteFormProps) {
         };
         setStops(newStops);
       } else if (key === "start") {
+        // @ts-ignore
         setForm((prev) => ({
           ...prev,
           start_address: input.value,
