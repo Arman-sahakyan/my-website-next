@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     shortcut: "/logo.png",
     apple: "/logo.png",
   },
-  keywords: 'Oregon trucking, oversize permit, truck permit, heavy haul, oregon truck permit, oregon trucking permit',
+  keywords: 'oregon trucks permits help, oregon trucking permit help, oregon trucks permit consulting',
 };
 
 export default function RootLayout({
