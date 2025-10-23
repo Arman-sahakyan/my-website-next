@@ -18,16 +18,59 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Oregon Trucking Permit",
-  description:
-    "Apply for Oregon trucking permits easily with our private online service.",
+  title: "Oregon Trucking Permit - Apply Online",
+  description: "Get your Oregon trucking permits easily with our online service. Oversize, overweight, and heavy haul permits delivered by email within minutes.",
+  keywords: "Oregon trucking, oversize permit, truck permit, heavy haul, oregon truck permit, oregon trucking permit, overweight permit",
+  authors: [{ name: "Oregon Trucking Permit" }],
+  creator: "Oregon Trucking Permit",
+  publisher: "Oregon Trucking Permit",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://www.oregontruckingpermit.com'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: "Oregon Trucking Permit - Apply Online",
+    description: "Get your Oregon trucking permits easily with our online service.",
+    url: "https://www.oregontruckingpermit.com",
+    siteName: "Oregon Trucking Permit",
+    images: [
+      {
+        url: '/logo.png', // or a dedicated og-image
+        width: 1200,
+        height: 630,
+        alt: 'Oregon Trucking Permit',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Oregon Trucking Permit - Apply Online",
+    description: "Get your Oregon trucking permits easily with our online service.",
+    images: ['/logo.png'], // or a dedicated twitter-image
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   icons: {
     icon: "/logo.png",
     shortcut: "/logo.png",
     apple: "/logo.png",
   },
-  keywords:
-    "Oregon trucking, oversize permit, truck permit, heavy haul, oregon truck permit, oregon trucking permit",
 };
 
 export default function RootLayout({
@@ -41,13 +84,19 @@ export default function RootLayout({
     name: "Oregon Trucking Permit",
     url: "https://www.oregontruckingpermit.com",
     logo: "https://www.oregontruckingpermit.com/logo.png",
+    description: "Apply for Oregon trucking permits easily with our private online service.",
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "US"
+    },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+15034387888",
-      contactType: "Customer Service",
+      telephone: "+1-503-438-7888",
+      contactType: "customer service",
       areaServed: "US",
+      availableLanguage: "English"
     },
-    
+    sameAs: [] // Add your social media profiles here if available
   };
 
   return (
