@@ -102,6 +102,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="logo" href="/logo.png" />
+        <link rel="image_src" href="/logo.png" />
+        
+        <link rel="preload" href="/logo.png" as="image" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
