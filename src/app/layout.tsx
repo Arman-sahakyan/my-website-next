@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   title: "Oregon Trucking Permit",
   description: "Get your Oregon trucking permits quickly and securely online.",
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
+    icon: "/logo.png",
+    shortcut: "/logo.png",
     apple: "/logo.png",
   },
   keywords: 'Oregon trucking, oversize permit, truck permit, heavy haul, oregon truck permit, oregon trucking permit',
