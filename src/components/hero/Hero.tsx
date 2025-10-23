@@ -150,9 +150,9 @@ export default function Hero() {
 
           <div className="hero__blurb">
             <p>
-              Get your Oregon truck permit by submitting your application
-              online. Our automation speeds up every step so you can receive
-              permits by email within minutes. Prefer help from a human? <a
+             Apply for Oregon truck permits with our private online service.
+We help carriers prepare and submit applications quickly — permits are issued by official state agencies.
+Prefer help from a human? Our support team is ready to assist. <a
                 href="tel:+15034387888">Contact us</a>.
             </p>
             <p className="hero__mini">

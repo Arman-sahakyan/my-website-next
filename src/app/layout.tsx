@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Oregon Trucking Permit",
-  description: "Get your Oregon trucking permits quickly and securely online.",
+  description: "Apply for Oregon trucking permits easily with our private online service.",
   icons: {
     icon: "/logo.png",
     shortcut: "/logo.png",
@@ -38,6 +38,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        
       </body>
     </html>
   );
