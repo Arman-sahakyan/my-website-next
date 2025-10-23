@@ -136,3 +136,12 @@ img{ max-width:100%; display:block; }
 .redy_pay{
   color: #10b981;
 }
+.trip-type{
+  border: none;
+}
+.radio_input,.trip-type__option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  
+}
