@@ -5,7 +5,11 @@ const page = ({ params }:any) => {
       const { draftId } = params;
 
     return (
-       <RouteForm draftId={draftId} />
+      <main className='container'>
+         <h1>Route Information</h1>
+         <RouteForm draftId={draftId} />
+      </main>
+       
     );
 };
 

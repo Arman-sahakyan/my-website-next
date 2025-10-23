@@ -224,7 +224,6 @@ export function RouteForm({ draftId}: RouteFormProps) {
   return (
     <div className="container">
       <form onSubmit={handleSubmit}>
-        <h2>Route Information</h2>
 
         {/* Route type */}
         <div className="form-section">
