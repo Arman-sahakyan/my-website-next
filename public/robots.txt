@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /admin
+
+# Host
+Host: https://oregontruckingpermit.com
+
+# Sitemaps
+Sitemap: https://oregontruckingpermit.com/sitemap.xml

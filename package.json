@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next-sitemap",
     "start": "next start"
   },
   "dependencies": {
@@ -12,6 +12,7 @@
     "firebase": "^12.4.0",
     "firebase-admin": "^13.5.0",
     "next": "15.5.5",
+    "next-sitemap": "^4.2.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "uuid": "^13.0.0"
