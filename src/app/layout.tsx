@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Oregon Trucking Permit",
     images: [
       {
-        url: '/logo.png', // or a dedicated og-image
+        url: '/logo.webp', // or a dedicated og-image
         width: 1200,
         height: 630,
         alt: 'Oregon Trucking Permit',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Oregon Trucking Permit - Apply Online",
     description: "Get your Oregon trucking permits easily with our online service.",
-    images: ['/logo.png'], // or a dedicated twitter-image
+    images: ['/logo.webp'], // or a dedicated twitter-image
   },
   robots: {
     index: true,
@@ -67,9 +67,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/logo.webp",
+    shortcut: "/logo.webp",
+    apple: "/logo.webp",
   },
 };
 
@@ -83,7 +83,7 @@ export default function RootLayout({
     "@type": "Organization",
     name: "Oregon Trucking Permit",
     url: "https://www.oregontruckingpermit.com",
-    logo: "https://www.oregontruckingpermit.com/logo.png",
+    logo: "https://www.oregontruckingpermit.com/logo.webp",
     description: "Apply for Oregon trucking permits easily with our private online service.",
     address: {
       "@type": "PostalAddress",
@@ -102,10 +102,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="logo" href="/logo.png" />
-        <link rel="image_src" href="/logo.png" />
+        <link rel="logo" href="/logo.webp" />
+        <link rel="image_src" href="/logo.webp" />
         
-        <link rel="preload" href="/logo.png" as="image" />
+        <link rel="preload" href="/logo.webp" as="image" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

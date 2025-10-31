@@ -7,7 +7,7 @@ function Footer() {
        <footer className="footer">
     <div className="footer_container container">
         <div className="logo">
-            <Link href="/"><img src="/images/logo4.png" alt="logo" /></Link>
+            <Link href="/"><img src="/logo.webp" alt="logo" /></Link>
             <h3 className='footer_title'>Oregon Trucking Permit</h3>
         </div>
         <div className="footer_contact">

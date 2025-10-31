@@ -9,7 +9,7 @@ const Header = () => {
       <div className="header_container">
         <div className="logo">
           <Link href="/">
-            <img src="/images/logo4.png" alt="logo" />
+            <img src="/logo.webp" alt="logo" />
           </Link>
         </div>
         <Link href="tel:+15034387888" className="contact">
