@@ -8,6 +8,7 @@ import { db } from "../../server/firebaseAdmin";
 import { addDoc } from "@/actions/action";
 import { useRouter } from "next/navigation";
 import type {Step1} from '@/Types/Step1'
+import Loading from "../Loading/Loading";
 const heroImage = "/images/Truck_banner.webp";
 
 export default function Hero() {
@@ -140,8 +141,7 @@ export default function Hero() {
                 {errors.phone && <p className="field-error">{errors.phone}</p>}
 
                 <div className="button-container">
-                  <button className="next-button hero-btn" type="submit">{loading?'Next...':'Next'}</button>
-                </div>
+<button className="next-button hero-btn" type="submit">{loading?<Loading size="20px" color="white" />:'Next'}</button>                </div>
               </form>
             </div>
             <aside className="hero__copy">

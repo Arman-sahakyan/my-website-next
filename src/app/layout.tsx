@@ -6,6 +6,7 @@ import "../styles/tokens.css";
 import "../styles/global.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import Script from 'next/script';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,7 +21,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Oregon Trucking Permit - Apply Online",
   description: "Get your Oregon trucking permits easily with our online service. Oversize, overweight, and heavy haul permits delivered by email within minutes.",
-  keywords: "Oregon trucking, oversize permit, truck permit, heavy haul, oregon truck permit, oregon trucking permit, overweight permit",
+  keywords: "Oregon trucking, oversize permit, truck permit, heavy haul, oregon truck permit, oregon trucking permit, overweight permit, oregon trucking",
   authors: [{ name: "Oregon Trucking Permit" }],
   creator: "Oregon Trucking Permit",
   publisher: "Oregon Trucking Permit",
@@ -110,6 +111,19 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <Script
+                strategy="afterInteractive"
+                src={`https://www.googletagmanager.com/gtag/js?id=G-PJQZMWTKEX`}
+              />
+              <Script id="ga-init" strategy="afterInteractive">
+                {`
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'G-PJQZMWTKEX', { page_path: window.location.pathname });
+                `}
+              </Script>
+        
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />
