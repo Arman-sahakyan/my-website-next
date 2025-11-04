@@ -107,7 +107,7 @@ export default function RootLayout({
         <link rel="image_src" href="/logo.webp" />
         
         <link rel="preload" href="/logo.webp" as="image" />
-        <script
+        <Script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />

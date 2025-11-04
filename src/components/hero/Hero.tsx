@@ -46,6 +46,7 @@ export default function Hero() {
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
+      setLoading(false)
       return;
     }
 
