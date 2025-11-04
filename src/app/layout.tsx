@@ -123,7 +123,36 @@ export default function RootLayout({
                   gtag('config', 'G-PJQZMWTKEX', { page_path: window.location.pathname });
                 `}
               </Script>
-        
+        <Script id="iubenda-config" strategy="beforeInteractive">
+          {`
+            var _iub = _iub || [];
+            _iub.csConfiguration = {
+              "siteId":4304670,
+              "cookiePolicyId":48534223,
+              "lang":"en",
+              "storage":{"useSiteId":true}
+            };
+          `}
+        </Script>
+
+        {/* Iubenda autoblocking */}
+        <Script
+          strategy="beforeInteractive"
+          src="https://cs.iubenda.com/autoblocking/4304670.js"
+        />
+
+        {/* GPP stub */}
+        <Script
+          strategy="beforeInteractive"
+          src="https://cdn.iubenda.com/cs/gpp/stub.js"
+        />
+
+        {/* Iubenda Cookie Solution */}
+        <Script
+          strategy="beforeInteractive"
+          src="https://cdn.iubenda.com/cs/iubenda_cs.js"
+          async
+        />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />
