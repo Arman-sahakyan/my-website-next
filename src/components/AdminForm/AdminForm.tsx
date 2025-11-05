@@ -220,6 +220,8 @@ const AdminForm = ({ draftId }:{draftId?: string}) => {
   }, []);
 
   async function getData() {
+    console.log(draftId);
+    
 
     if (!draftId) return;
     setLoading(true);

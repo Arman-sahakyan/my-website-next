@@ -1,0 +1,13 @@
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 8px;
+    padding: 30px 20px;
+}
+.loginError{
+    color: red;
+}

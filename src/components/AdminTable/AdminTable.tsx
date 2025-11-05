@@ -47,7 +47,7 @@ const AdminTable = () => {
   }
 
   return (
-    <div className="container">
+    <div className="container adminTableContainer">
       <div>
         <Link href="/admin/new">+ New Permit</Link>
       </div>

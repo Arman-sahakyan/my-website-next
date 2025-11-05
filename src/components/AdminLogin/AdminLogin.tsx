@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "@/server/firebase";
+import './AdminLogin.css'
 
 export default function AdminLoginPage() {
   const [email, setEmail] = useState("");
@@ -37,10 +38,10 @@ export default function AdminLoginPage() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-50">
+    <div className="container flex min-h-screen items-center justify-center bg-gray-50">
       <form
         onSubmit={handleLogin}
-        className="bg-white p-8 shadow-md rounded-2xl w-full max-w-sm"
+        className="loginForm bg-white p-8 shadow-md rounded-2xl w-full max-w-sm"
       >
         <h2 className="text-2xl font-bold mb-6 text-center">Admin Login</h2>
 
@@ -49,7 +50,7 @@ export default function AdminLoginPage() {
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full p-2 border rounded-lg mb-4"
+          className="places-autocomplete-input w-full p-2 border rounded-lg mb-4"
           placeholder="you@example.com"
           required
         />
@@ -59,17 +60,17 @@ export default function AdminLoginPage() {
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full p-2 border rounded-lg mb-4"
+          className="places-autocomplete-input w-full p-2 border rounded-lg mb-4"
           placeholder="••••••••"
           required
         />
 
-        {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
+        {error && <p className="loginError text-red-500 text-sm mb-4">{error}</p>}
 
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700 transition"
+          className="next-button hero-btn w-full bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700 transition"
         >
           {loading ? "Signing in..." : "Login"}
         </button>

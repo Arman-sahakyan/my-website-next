@@ -1,32 +1,35 @@
 "use server";
 
 import { db } from "@/server/firebaseAdmin";
-import { error } from "console";
+import {FieldValue } from "firebase-admin/firestore";
 
 export async function addDoc(payload: any) {
   if (!payload) return null;
 
+  // Admin SDK requires pure objects
+  const cleanPayload = JSON.parse(JSON.stringify(payload));
+
   const result = {
-    ...payload,
-    createdAt: new Date(),
+    ...cleanPayload,
+    createdAt: FieldValue.serverTimestamp(), // ✅ Admin version
     status: "draft",
   };
 
   try {
-    // Add the document to Firestore
     const newDocRef = await db.collection("permits").add(result);
 
-    // newDocRef.id is the Firestore-generated document ID
     return {
       id: newDocRef.id,
-      
-      ...result, // optional: return the data you stored
+      ...cleanPayload,
+      status: "draft",
+      createdAt: Date.now(), // optional, for client response
     };
   } catch (err) {
     console.error("Failed to add document:", err);
     throw err;
   }
 }
+
 
 export async function getTruckInfo(draftId: string) {
   if (!draftId) throw new Error("Missing draftId");
