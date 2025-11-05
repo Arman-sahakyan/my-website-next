@@ -19,3 +19,24 @@
 .adminTable_row:hover{
     background-color: rgb(231, 231, 231);
 }
+.refreshBtn{
+    border-radius: 8px;
+    padding: 3px 3px 0 3px;
+    width: max-content;
+    cursor: pointer;
+    height: max-content;
+    transition: all .45s ease;
+}
+.refreshBtn:hover{
+    background-color: rgb(232, 232, 232);
+    
+    transition: all .45s ease;
+}
+.refreshBtn svg{
+    fill: rgb(84, 84, 84);
+}
+.adminControls{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
